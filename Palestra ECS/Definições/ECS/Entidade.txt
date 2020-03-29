@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-04T19:24:48-03:00
+
+====== Entidade ======
+Criado quarta 04 setembro 2019
+

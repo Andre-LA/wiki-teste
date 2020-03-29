@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-04T20:41:13-03:00
+
+====== Entity Systems are the future of MMOG development – Part 2 ======
+Criado quarta 04 setembro 2019
+
+Aqui ele divide em diversas partes, mas o artigo se resume à definição do que ele chama de Sistema de Entidade (Entity System), que hoje é conhecida como ECS.
+
+Ele aborda sobre a geral //(e não falada, infelizmente até hoje)// discordância sobre o que é ES.
+
+Para algumas pessoas é a mesma coisa que Component System, outros como Programação Orientada à Componentes (POC), e assim vai.
+
+O que é entidade:
+Para cada "coisa" discernível no mundo do jogo, tem-se uma entidade.
+Entidade representa um objeto em jogo de forma concreta.
+
+O que é componente:
+Cada item em jogo contém múltiplos aspectos que explicam o que ele é e como interage com o mundo.
+
+Isso se diferencia à POO, porque POO não contém "múltiplos aspectos", ao invés disso, ele junta todos os aspectos numa só "coisa" //(era glob)//, múltipla herança pode lembrar isso, mas contém o mesmo problema.
+//(obs pessoal: e pode gerar o problema do diamante)//
+
+Para que a entidade possa representar aspectos diferentes de cada item, é ter um componente para cada aspecto.
+
+Ou seja, conceitualmente, componentes descrevem um aspecto da entidade.
+
+Sistemas:
+
+POO faz uma coisa bem: dentro do contexto de um software, que contém um amontoado de dados por si só, ele isola um subconjunto desses dados de forma boa.
+Ou seja, POO é ideal num cenário micro.
+Entretanto, POO não é bom quando se trata de um cenário macro //("global", no artigo)//, ES entretanto faz isso bem, lidando com as coisas globais usando sistemas.
+
+Cada sistema roda continuosamente e performa ações globais em cada entidade que possesa um componente(s) do mesmo aspecto que o sistema.
+
+Finalmente, ele explica algumas vantagens do ES para alguns públicos, como programadores acostumados a criar sistemas e percebem que precisam apenas de alguns aspectos isolados de cada objeto de jogo; programadores de processamento paralelo (ES é escalável sem custo); projetistas de jogos que podem customizar os aspectos dos objetos de jogo livremente (Uma câmera que atira por exemplo).
+
+Finalmente ele cita sobre a similaridade com a Relation Oriented Programming, o que é interessante porque na Wikipédia inglesa, uma pessoa questionou a existência do artigo devido a isso.
+
+//(o blogueiro prometeu criar um artigo sobre isso, não sei se ele escreveu)//

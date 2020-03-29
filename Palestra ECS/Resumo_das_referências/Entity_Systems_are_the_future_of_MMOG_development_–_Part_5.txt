@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-04T20:41:41-03:00
+
+====== Entity Systems are the future of MMOG development – Part 5 ======
+Criado quarta 04 setembro 2019
+

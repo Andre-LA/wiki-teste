@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-04T22:11:00-03:00
+
+====== Using Rust for Game Development by Catherine West ======
+Criado quarta 04 setembro 2019
+
+Palestra: https://www.youtube.com/watch?v=aKLntZcp27M
+
+Nos primeiros 5 minutos ela comenta que o Rust torna alguns padrões difíceis de usar, entretanto isso seria uma boa coisa porque esses padrões são ruins e não deveriam ser usados de qualquer forma.
+
+O padrões mais fáceis de se usar em Rust são os mais geralmente mesmo.
+Para jogos, um desses padrões é o ECS, mas há outros.
+Rust te recompensa por usar um desenho orientado a dados com uma clara propriedade desses dados.
+
+O motor de jogo mais simples: O estato de jogo global e mutável com "sistemas"
+Você //pode//, mas não deve.
+
+Resolvendo esse problema:
+* Príncipios da orientação à objeto:
+* Príncipio da responsabilidade única;
+* Encapsulação;
+* Abtração;
+* Acoplamento Mínimo.
+
+Num exemplo OO, ela cria uma estrutura por entidade possível, como Jogador, Monstro, NPC e o EstadoDeJogo, que contém um vetor (arranjo) de cada um dos tipos de entidades listados:
+
+{{~/Imagens/kyrenKeynote01.png}}
+
+
+Segundo exemplo OO, usando classes e Interfaces:
+{{~/Imagens/kyrenKey02.png}}
+
+MAS! Novos requerimentos começam a vir //(Questão muito importante em jogos, porque jogo sempre muda com o tempo)//
+No exemplo anterior, isso é resolvido afinal com acessores.
+{{~/Imagens/kyrenKey03.png}}
+
+Os requerimentos não pararão de vir, e novos acessores deverão ser criados, e isso nunca parará realmente, o código de exemplo abaixo é umas 10x maior que na imagem.
+{{~/Imagens/kyrenKey04.png}}
+
+Voltando ao início, se aplicar esse padrão em Rust, as coisas ficam complicadas e tediosas rapidamente
+{{~/Imagens/kyrenKey05.png}}
+{{~/Imagens/kyrenKey06.png}}
+
+**PAREI EM 22MIN**

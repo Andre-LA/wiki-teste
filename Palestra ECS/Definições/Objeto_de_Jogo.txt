@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-23T21:52:36-03:00
+
+====== Objeto de Jogo ======
+Criado quinta 23 janeiro 2020
+

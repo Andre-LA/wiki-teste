@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-04T19:24:12-03:00
+
+====== ECS ======
+Criado quarta 04 setembro 2019
+
+===== Primeiro jogo a usar ECS: =====
+Aparentemente Dungeon Siege.
+**INVESTIGAR**: Talvez não? Dungeon Siege usa "entity system", talvez seja outra coisa, conferir na sua palestra da GDC.
+**ATUALIZAÇÃO: **Não, Dungeon Siege usa Entity System, que é basicamente o que é a Unity.
+
+===== Vantagens =====
+
+===== Desvantagens =====

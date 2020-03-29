@@ -1,0 +1,48 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-23T19:19:09-03:00
+
+====== A Data-Driven Game Object System ======
+Criado quinta 23 janeiro 2020
+@data_driven @gameobject @POO 
+
+Este artigo é relevante para [[Definições:Programação Dirigida por Dados]]
+
+**Autor**: Scott Bilas
+**Ano**: 2002
+**Tipo**: eslaides (de uma palestra da GDC que não encontrei gravação)
+
+Ele introduz como problema o problema de se lutar contra sistema estaticamente tipados para código de jogo, e como estudo de caso, o jogo [[https://web.archive.org/web/20030601144002/http://www.dungeonsiege.com/index.shtml|Dungeon Siege]], que contém 7300 objetos únicos (que podem ser colocados no jogo pelo editor) e 100000 objetos colocados em dois mapas.
+Observação: Um mundo contínuo significa que __qualquer coisa pode ser carregado à qualquer momento.__
+
+====== Definições ======
+
+===== Data-Driven: "Dirigida" por Dados =====
+
+//Observação pessoal: //
+//Normalmente a tradução seria "Programação Orientada a Dados", entretanto, existe outro conceito chamado Data Oriented Design.//
+//Já existe uma confusão frequente sobre esses dois termos em inglês, imagine então em português com termos idênticos? Escolhi por traduzir para "Dirigida" visto que na Wikipédia é traduzido como "Programación dirigida por datos".//
+
+Significa "engenheiros não são necessários", porque eles são lentos, fazendo que projetistas tenham que //gambiarrar// para implementar alguma funcionalidade inexistente.
+O objetivo de se "Dirigir por Dados" é remover código C ou C++ do jogo, por conta disso, __a linha que separa motor e conteúdo está sempre mudando__.
+
+===== Game Object (Go): Objeto de Jogo =====
+
+Um Objeto de Jogo é uma peça lógica de conteúdo interativo, atua em tarefas como renderização, busca de caminho, seguimento de caminho, fala, animação e "persistência" //(obs pessoal: não entendi bem o que ele quis dizer com isso, talvez "persistência na memória"?).//
+Exemplos de objetos de jogo são árvores, arbustos, monstros, alavancas, marcadores de ponto de passagem, portas, heróis, itens de inventário, etc.
+Muitos são "pura lógica" e invisíveis (disparadores, movedores de elevador, sequências de câmera), todo jogo contém esses de alguma forma.
+
+===== Game Object System: Sistemas de Objetos de Jogo =====
+Constrói e gerencia objetos de jogo, mapeia IDs para ponteiros de objeto e "routes messages".
+É construído de várias coisas, mas para a palestra, foi definido:
+GoDb: Banco de dados para objetos de jogos;
+ContentDb: Banco de dados para conteúdo estático.
+Todo jogo contém esses de alguma forma.
+
+Exemplo de uma árvore de classes no modo "clássico":
+{{./ditaa.png?type=ditaa}}
+
+Exemplo de uma árvore de classes da forma "moderna" (isso é, usando Game Object System):
+
+{{./ditaa001.png?type=ditaa}}
+

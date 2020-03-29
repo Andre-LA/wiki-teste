@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-09-04T19:55:25-03:00
+
+====== Resumo das referências ======
+Criado quarta 04 setembro 2019
+
+Todas as referências:
+T-Machine: ES ao invés de ECS, não sei se ambos são os mesmos, mas claramente ECS veio daqui, que veio da implementação do Scott Bilas (ver link do gamedevs).
+https://www.gamedevs.org/uploads/data-driven-game-object-system.pdf
+[[http://t-machine.org/index.php/2007/09/03/entity-systems-are-the-future-of-mmog-development-part-1/|Entity Systems are the future of MMOG development – Part 1]]
+http://t-machine.org/index.php/2007/11/11/entity-systems-are-the-future-of-mmog-development-part-2/
+http://t-machine.org/index.php/2007/12/22/entity-systems-are-the-future-of-mmog-development-part-3/
+http://t-machine.org/index.php/2008/03/13/entity-systems-are-the-future-of-mmos-part-4/
+http://t-machine.org/index.php/2009/10/26/entity-systems-are-the-future-of-mmos-part-5/
+
+Posts do Bitsquid:
+https://bitsquid.blogspot.com/2014/08/building-data-oriented-entity-system.html
+https://bitsquid.blogspot.com/2014/09/building-data-oriented-entity-system.html
+https://bitsquid.blogspot.com/2014/10/building-data-oriented-entity-system.html
+https://bitsquid.blogspot.com/2014/10/building-data-oriented-entity-system_10.html
+
+Posts do Our Machinery:
+https://ourmachinery.com/post/should-entities-support-multiple-instances-of-the-same-component/
+https://ourmachinery.com/post/syncing-a-data-oriented-ecs/
+https://ourmachinery.com/post/ecs-and-rendering/
+
+Catheryne West, entretanto é sobre a questão da organização:
+https://kyren.github.io/2018/09/14/rustconf-talk.html
+https://www.youtube.com/watch?v=aKLntZcp27M 
+
+Mike Acton, entretanto é sobre DOD
+https://www.youtube.com/watch?v=rX0ItVEVjHc 
